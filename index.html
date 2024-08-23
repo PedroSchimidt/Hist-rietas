@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórietas</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html"><img src="Historietas.png" alt="Logo da Histórietas" class="logo"></a>
+        <nav class="nav-links">
+            <a href="index.html">Início</a> <!-- Novo link adicionado -->
+            <a href="sobre.html">Sobre</a>
+           
+        </nav>
+    </header>
+    
+
+    <div class="container">
+        <h1>Gerador de Histórias</h1>
+        <div class="formulario">
+            <h3>Informe os personagens ou cenários que deseja utilizar</h3>
+            <div id="personagens"> 
+                <div class="personagem-row">
+                    <input type="text" class="personagem personagem-input" placeholder="Informe personagens ou cenários ...">
+                    <button class="btn-danger" onclick="removePersonagem(this)" disabled>Excluir</button>
+                </div>
+                <div class="personagem-row">
+                    <input type="text" class="personagem personagem-input" placeholder="Informe personagens ou cenários ...">
+                    <button class="btn-danger" onclick="removePersonagem(this)" disabled>Excluir</button>
+                </div>
+                <div class="personagem-row">
+                    <input type="text" class="personagem personagem-input" placeholder="Informe personagens ou cenários...">
+                    <button class="btn-danger" onclick="removePersonagem(this)" disabled>Excluir</button>
+                </div>
+            </div>
+            <button class="btn-primary" onclick="addPersonagem()">Adicionar personagens ou cenários</button>
+            <button class="btn-success" onclick="submitForm()">Gerar Histórinha</button>
+        </div>
+        <div id="response" class="response"></div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Histórietas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./script.js"></script> 
+
+</body>
+</html>
